@@ -9,7 +9,13 @@ const cors=require("cors");
 const { log } = require("console");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin:["https://"],
+        methods:["POST","GET"],
+        credentials:true
+    }
+));
 
 //database connection with mongodb
 mongoose.connect("mongodb+srv://akhilsingh:Akhil630@cluster0.loupeam.mongodb.net/e-commerce");
