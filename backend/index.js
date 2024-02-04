@@ -11,9 +11,9 @@ const { log } = require("console");
 app.use(express.json());
 app.use(cors(
     {
-        origin:["https://vercel.com/akhil964892s-projects/e-commerce-01"],
-        methods:["POST","GET"],
-        credentials:true
+        origin: ["https://vercel.com/akhil964892s-projects/e-commerce-01"],
+        methods: ["POST","GET"],
+        credentials: true
     }
 ));
 
